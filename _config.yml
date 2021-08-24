@@ -1,0 +1,17 @@
+# Site settings
+title: "COMPSCI 682 Neural Networks: A Modern Introduction"
+email: umass.deep.learning+682@gmail.com
+description: "Course materials and notes for UMass-Amherst COMPSCI 682 Neural Networks: A Modern Introduction."
+baseurl: ""
+url: "http://compsci682.github.io"
+github_username:  compsci682
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
