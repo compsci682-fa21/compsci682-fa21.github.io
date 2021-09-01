@@ -17,7 +17,10 @@ In this assignment you will practice putting together a simple image classificat
 - get a basic understanding of performance improvements from using **higher-level representations** than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
 
 ### Setup
-Get the code as a zip file [here](http://vis-www.cs.umass.edu/682/asgns/assignment1.zip). As for the dependencies:
+Get the code as a zip file [here](http://vis-www.cs.umass.edu/682/asgns/assignment1.zip). 
+The assignment would be using Python = 3.6
+
+As for the dependencies:
 
 **[Option 1] Use Anaconda:**
 The preferred approach for installing all the assignment dependencies is to use [Anaconda](https://www.anaconda.com/), which is a Python distribution that includes many of the most popular Python packages for science, math, engineering and data analysis. Once you install it you can skip all mentions of requirements and you're ready to go directly to working on the assignment.
@@ -25,12 +28,26 @@ The preferred approach for installing all the assignment dependencies is to use 
 **[Option 2] Manual install, virtual environment:**
 If you'd like to (instead of Anaconda) go with a more manual and risky installation route you will likely want to create a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for the project. If you choose not to use a virtual environment, it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment, run the following:
 
+**For Linux / MacOS**
+
 ```bash
 cd assignment1
 sudo pip install virtualenv      # This may already be installed
 virtualenv .env                  # Create a virtual environment
 source .env/bin/activate         # Activate the virtual environment
+conda install jupyter			 # Install Jupyter
 pip install -r requirements.txt  # Install dependencies
+# Work on the assignment for a while ...
+deactivate                       # Exit the virtual environment
+```
+
+**For Windows**
+
+```bash
+cd assignment1
+conda create -n cs682 python=3.5	# Create environment
+conda activate cs682				# Activate the environment
+pip install -r requirements.txt		# Install dependencies
 # Work on the assignment for a while ...
 deactivate                       # Exit the virtual environment
 ```
