@@ -22,7 +22,7 @@ Numpy
 -->
 
 <div>
-  <a href="https://colab.research.google.com/github/cs231n/cs231n.github.io/blob/master/python-colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/compsci682-fa21/compsci682-fa21.github.io/blob/main/colab_tutorial.ipynb" target="_blank">
     <img class="colab-badge" src="/assets/badges/colab-open.svg" alt="Colab Notebook"/>
   </a>
 </div>
@@ -90,7 +90,7 @@ and benefits from free access to hardware accelerators like GPUs and TPUs (with 
 
 **Run Tutorial in Colab (recommended)**. If you wish to run this tutorial entirely in Colab, click the `Open in Colab` badge at the very top of this page.
 
-**Run Tutorial in Jupyter Notebook**. If you wish to run the notebook locally with Jupyter, make sure your virtual environment is installed correctly (as per the [setup instructions]({{site.baseurl}}/setup-instructions/)), activate it, then run `pip install notebook` to install Jupyter notebook. Next, [open the notebook](https://raw.githubusercontent.com/cs231n/cs231n.github.io/master/jupyter-notebook-tutorial.ipynb) and download it to a directory of your choice by right-clicking on the page and selecting `Save Page As`. Then `cd` to that directory and run `jupyter notebook`.
+**Run Tutorial in Jupyter Notebook**. If you wish to run the notebook locally with Jupyter, make sure your virtual environment is installed correctly (as per the [setup instructions]({{site.baseurl}}/setup-instructions/)), activate it, then run `pip install notebook` to install Jupyter notebook. Next, [open the notebook](https://colab.research.google.com/github/compsci682-fa21/compsci682-fa21.github.io/blob/main/colab_tutorial.ipynb) and download it to a directory of your choice by right-clicking on the page and selecting `Save Page As`. Then `cd` to that directory and run `jupyter notebook`.
 
 <div class='fig figcenter'>
   <img src='/assets/ipython-tutorial/file-browser.png'>
