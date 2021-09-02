@@ -127,10 +127,7 @@ print quicksort([3,6,8,10,1,2,1])
 ```
 
 ### Python versions
-There are currently two different supported versions of Python, 2.7 and 3.4.
-Somewhat confusingly, Python 3.0 introduced many backwards-incompatible changes
-to the language, so code written for 2.7 may not work under 3.4 and vice versa.
-For this class all code will use Python 2.7.
+Ensure you are using Python 3.7 as we are no longer supporting Python 2.
 
 You can check your Python version at the command line by running
 `python --version`.
