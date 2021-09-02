@@ -163,7 +163,7 @@ or decrement (`x--`) operators.
 
 Python also has built-in types for long integers and complex numbers;
 you can find all of the details
-[in the documentation](https://docs.python.org/2/library/stdtypes.html#numeric-types-int-float-long-complex).
+[in the documentation](https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-long-complex).
 
 **Booleans:** Python implements all of the usual operators for Boolean logic,
 but uses English words rather than symbols (`&&`, `||`, etc.):
@@ -203,7 +203,7 @@ print s.replace('l', '(ell)')  # Replace all instances of one substring with ano
                                # prints "he(ell)(ell)o"
 print '  world '.strip()  # Strip leading and trailing whitespace; prints "world"
 ```
-You can find a list of all string methods [in the documentation](https://docs.python.org/2/library/stdtypes.html#string-methods).
+You can find a list of all string methods [in the documentation](https://docs.python.org/3.6/library/stdtypes.html#string-methods).
 
 <a name='python-containers'></a>
 
@@ -228,7 +228,7 @@ x = xs.pop()     # Remove and return the last element of the list
 print x, xs      # Prints "bar [3, 1, 'foo']"
 ```
 As usual, you can find all the gory details about lists
-[in the documentation](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists).
+[in the documentation](https://docs.python.org/3.6/tutorial/datastructures.html#more-on-lists).
 
 **Slicing:**
 In addition to accessing list elements one at a time, Python provides
@@ -313,7 +313,7 @@ del d['fish']        # Remove an element from a dictionary
 print d.get('fish', 'N/A') # "fish" is no longer a key; prints "N/A"
 ```
 You can find all you need to know about dictionaries
-[in the documentation](https://docs.python.org/2/library/stdtypes.html#dict).
+[in the documentation](https://docs.python.org/3.6/library/stdtypes.html#dict).
 
 **Loops:** It is easy to iterate over the keys in a dictionary:
 
@@ -364,7 +364,7 @@ print len(animals)       # Prints "2"
 ```
 
 As usual, everything you want to know about sets can be found
-[in the documentation](https://docs.python.org/2/library/sets.html#set-objects).
+[in the documentation](https://docs.python.org/3.6/library/stdtypes.html#set-types-set-frozenset).
 
 
 **Loops:**
@@ -403,7 +403,7 @@ print type(t)    # Prints "<type 'tuple'>"
 print d[t]       # Prints "5"
 print d[(1, 2)]  # Prints "1"
 ```
-[The documentation](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) has more information about tuples.
+[The documentation](https://docs.python.org/3.6/tutorial/datastructures.html#tuples-and-sequences) has more information about tuples.
 
 <a name='python-functions'></a>
 
@@ -437,7 +437,7 @@ hello('Bob') # Prints "Hello, Bob"
 hello('Fred', loud=True)  # Prints "HELLO, FRED!"
 ```
 There is a lot more information about Python functions
-[in the documentation](https://docs.python.org/2/tutorial/controlflow.html#defining-functions).
+[in the documentation](https://docs.python.org/3.6/tutorial/controlflow.html#defining-functions).
 
 <a name='python-classes'></a>
 
@@ -464,7 +464,7 @@ g.greet()            # Call an instance method; prints "Hello, Fred"
 g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
 ```
 You can read a lot more about Python classes
-[in the documentation](https://docs.python.org/2/tutorial/classes.html).
+[in the documentation](https://docs.python.org/3.6/tutorial/classes.html).
 
 <a name='numpy'></a>
 
@@ -1119,7 +1119,7 @@ plt.show()
 </div>
 
 You can read much more about the `plot` function
-[in the documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot).
+[in the documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html).
 
 <a name='matplotlib-subplots'></a>
 
@@ -1158,7 +1158,7 @@ plt.show()
 </div>
 
 You can read much more about the `subplot` function
-[in the documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot).
+[in the documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html).
 
 <a name='matplotlib-images'></a>
 
