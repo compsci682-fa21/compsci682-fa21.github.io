@@ -104,8 +104,6 @@ tutorial with code snippets below.
 
 <a name='python'></a>
 
-<a name='python'></a>
-
 ## Python
 
 Python is a high-level, dynamically typed multiparadigm programming language.
