@@ -82,11 +82,10 @@ If you'd like to (instead of Anaconda) go with a more manual and risky installat
 
 ```bash
 cd assignment1
-sudo pip install virtualenv      # This may already be installed
-virtualenv .env                  # Create a virtual environment
-source .env/bin/activate         # Activate the virtual environment
+conda create -n cs682 python=3.6	# Create environment
+conda activate cs682				# Activate the environment
+pip install -r requirements.txt		# Install dependencies
 conda install jupyter			 # Install Jupyter
-pip install -r requirements.txt  # Install dependencies
 # Work on the assignment for a while ...
 deactivate                       # Exit the virtual environment
 ```
