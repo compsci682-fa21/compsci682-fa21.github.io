@@ -75,8 +75,7 @@ You may refer to [this page](https://docs.conda.io/projects/conda/en/latest/user
 
 <a name='venv'></a>
 
-
-**[Option 2] Manual install, virtual environment:**
+#### Manual install, virtual environment
 If you'd like to (instead of Anaconda) go with a more manual and risky installation route you will likely want to create a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for the project. If you choose not to use a virtual environment, it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment, run the following:
 
 **For Linux / MacOS**
@@ -103,7 +102,7 @@ pip install -r requirements.txt		# Install dependencies
 deactivate                       # Exit the virtual environment
 ```
 
-#### Python venv
+<!-- #### Python venv
 
 As of 3.3, Python natively ships with a lightweight virtual environment module called [venv](https://docs.python.org/3/library/venv.html). Each virtual environment packages its own independent set of installed Python packages that are isolated from system-wide Python packages and runs a Python version that matches that of the binary that was used to create it. To set up a virtual environment called `cs231n`, run the following in your terminal:
 
@@ -122,7 +121,7 @@ To activate and enter the environment, run `source ~/cs231n/bin/activate`. To de
 which python
 # for example, on my machine, this prints
 # $ '/Users/kevin/cs231n/bin/python'
-```
+``` -->
 
 <a name='packages'></a>
 #### Installing packages
