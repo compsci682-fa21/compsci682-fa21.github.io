@@ -21,6 +21,12 @@ Python:
 Numpy
 -->
 
+<div>
+  <a href="https://colab.research.google.com/github/cs231n/cs231n.github.io/blob/master/python-colab.ipynb" target="_blank">
+    <img class="colab-badge" src="/assets/badges/colab-open.svg" alt="Colab Notebook"/>
+  </a>
+</div>
+
 This tutorial was contributed by [Justin Johnson](http://cs.stanford.edu/people/jcjohns/).
 
 We will use the Python programming language for all assignments in this course.
@@ -29,16 +35,20 @@ help of a few popular libraries (numpy, scipy, matplotlib) it becomes a powerful
 environment for scientific computing.
 
 We expect that many of you will have some experience with Python and numpy;
-for the rest of you, this section will serve as a quick crash course both on
-the Python programming language and on the use of Python for scientific
-computing.
-
-Some of you may have previous knowledge in Matlab, in which case we also recommend the [numpy for Matlab users](http://wiki.scipy.org/NumPy_for_Matlab_Users) page.
+for the rest of you, this section will serve as a quick crash course on both
+the Python programming language and its use for scientific
+computing. We'll also introduce notebooks, which are a very convenient way
+of tinkering with Python code. Some of you may have previous knowledge in a
+different language, in which case we also recommend referencing:
+[NumPy for Matlab users](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html),
+[Python for R users](http://www.data-analysis-in-python.org/python_for_r.html), and/or
+[Python for SAS users](https://nbviewer.jupyter.org/github/RandyBetancourt/PythonForSASUsers/tree/master/).
 
 You can also find an [Jupyter notebook version of this tutorial here](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) created by [Volodymyr Kuleshov](http://web.stanford.edu/~kuleshov/) and [Isaac Caswell](https://symsys.stanford.edu/viewing/symsysaffiliate/21335) for [Stanford CS 228](http://cs.stanford.edu/~ermon/cs228/index.html).
 
 Table of contents:
 
+- [Jupyter and Colab Notebooks](#jupyter-and-colab-notebooks)
 - [Python](#python)
   - [Basic data types](#python-basic)
   - [Containers](#python-containers)
@@ -62,6 +72,37 @@ Table of contents:
   - [Plotting](#matplotlib-plotting)
   - [Subplots](#matplotlib-subplots)
   - [Images](#matplotlib-images)
+
+## Jupyter and Colab Notebooks
+
+Before we dive into Python, we'd like to briefly talk about *notebooks*.
+A Jupyter notebook lets you write and execute
+Python code *locally* in your web browser. Jupyter notebooks
+make it very easy to tinker with code and execute it in bits
+and pieces; for this reason they are widely used in scientific
+computing.
+Colab on the other hand is Google's flavor of
+Jupyter notebooks that is particularly suited for machine
+learning and data analysis and that runs entirely in the *cloud*.
+Colab is basically Jupyter notebook on steroids: it's free, requires no setup,
+comes preinstalled with many packages, is easy to share with the world,
+and benefits from free access to hardware accelerators like GPUs and TPUs (with some caveats).
+
+**Run Tutorial in Colab (recommended)**. If you wish to run this tutorial entirely in Colab, click the `Open in Colab` badge at the very top of this page.
+
+**Run Tutorial in Jupyter Notebook**. If you wish to run the notebook locally with Jupyter, make sure your virtual environment is installed correctly (as per the [setup instructions]({{site.baseurl}}/setup-instructions/)), activate it, then run `pip install notebook` to install Jupyter notebook. Next, [open the notebook](https://raw.githubusercontent.com/cs231n/cs231n.github.io/master/jupyter-notebook-tutorial.ipynb) and download it to a directory of your choice by right-clicking on the page and selecting `Save Page As`. Then `cd` to that directory and run `jupyter notebook`.
+
+<div class='fig figcenter'>
+  <img src='/assets/ipython-tutorial/file-browser.png'>
+</div>
+
+This should automatically launch a notebook server at `http://localhost:8888`.
+If everything worked correctly, you should see a screen like this, showing all
+available notebooks in the current directory. Click `jupyter-notebook-tutorial.ipynb`
+and follow the instructions in the notebook. Otherwise, you can continue reading the
+tutorial with code snippets below.
+
+<a name='python'></a>
 
 <a name='python'></a>
 
