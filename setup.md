@@ -9,7 +9,7 @@ This year, the recommended way to work on assignments is through [Google Colabor
 - [Working remotely on Google Colaboratory](#working-remotely-on-google-colaboratory)
 - [Working locally on your machine](#working-locally-on-your-machine)
   - [Anaconda virtual environment](#anaconda-virtual-environment)
-  - [Python venv](#python-venv)
+  - [Manual install, virtual environment](#Manual install, virtual environment)
   - [Installing packages](#installing-packages)
 
 ### Working remotely on Google Colaboratory
