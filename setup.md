@@ -45,20 +45,20 @@ If you're interested in learning more about Colab, we encourage you to visit the
 * [Overview of Colab Features](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
 ### Working locally on your machine
-If you wish to work locally, you should use a virtual environment. You can install one via Anaconda (recommended) or via Python's native `venv` module. Ensure you are using Python 3.7 as **we are no longer supporting Python 2**.
+If you wish to work locally, you should use a virtual environment. You can install one via Anaconda (recommended) or via Python's native `venv` module. Ensure you are using Python 3.6 as **we are no longer supporting Python 2**.
 
 #### Anaconda virtual environment
-We strongly recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version, which currently installs Python 3.7. The neat thing about Anaconda is that it ships with [MKL optimizations](https://docs.anaconda.com/mkl-optimizations/) by default, which means your `numpy` and `scipy` code benefit from significant speed-ups without having to change a single line of code.
+We strongly recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version, which currently installs Python 3.6. The neat thing about Anaconda is that it ships with [MKL optimizations](https://docs.anaconda.com/mkl-optimizations/) by default, which means your `numpy` and `scipy` code benefit from significant speed-ups without having to change a single line of code.
 
-Once you have Anaconda installed, it makes sense to create a virtual environment for the course. If you choose not to use a virtual environment (strongly not recommended!), it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment called `cs231n`, run the following in your terminal:
+Once you have Anaconda installed, it makes sense to create a virtual environment for the course. If you choose not to use a virtual environment (strongly not recommended!), it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment called `compsci682`, run the following in your terminal:
 
 ```bash
 # this will create an anaconda environment
-# called cs231n in 'path/to/anaconda3/envs/'
-conda create -n cs231n python=3.7
+# called compsci682 in 'path/to/anaconda3/envs/'
+conda create -n compsci682 python=3.6
 ```
 
-To activate and enter the environment, run `conda activate cs231n`. To deactivate the environment, either run `conda deactivate cs231n` or exit the terminal. Note that every time you want to work on the assignment, you should rerun `conda activate cs231n`.
+To activate and enter the environment, run `conda activate compsci682`. To deactivate the environment, either run `conda deactivate compsci682` or exit the terminal. Note that every time you want to work on the assignment, you should rerun `conda activate compsci682`.
 
 ```bash
 # sanity check that the path to the python
@@ -74,6 +74,35 @@ You may refer to [this page](https://docs.conda.io/projects/conda/en/latest/user
 **Note:** If you've chosen to go the Anaconda route, you can safely skip the next section and move straight to [Installing Packages](#installing-packages).
 
 <a name='venv'></a>
+
+
+**[Option 2] Manual install, virtual environment:**
+If you'd like to (instead of Anaconda) go with a more manual and risky installation route you will likely want to create a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for the project. If you choose not to use a virtual environment, it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment, run the following:
+
+**For Linux / MacOS**
+
+```bash
+cd assignment1
+sudo pip install virtualenv      # This may already be installed
+virtualenv .env                  # Create a virtual environment
+source .env/bin/activate         # Activate the virtual environment
+conda install jupyter			 # Install Jupyter
+pip install -r requirements.txt  # Install dependencies
+# Work on the assignment for a while ...
+deactivate                       # Exit the virtual environment
+```
+
+**For Windows**
+
+```bash
+cd assignment1
+conda create -n cs682 python=3.5	# Create environment
+conda activate cs682				# Activate the environment
+pip install -r requirements.txt		# Install dependencies
+# Work on the assignment for a while ...
+deactivate                       # Exit the virtual environment
+```
+
 #### Python venv
 
 As of 3.3, Python natively ships with a lightweight virtual environment module called [venv](https://docs.python.org/3/library/venv.html). Each virtual environment packages its own independent set of installed Python packages that are isolated from system-wide Python packages and runs a Python version that matches that of the binary that was used to create it. To set up a virtual environment called `cs231n`, run the following in your terminal:

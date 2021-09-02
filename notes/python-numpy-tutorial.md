@@ -127,7 +127,7 @@ print quicksort([3,6,8,10,1,2,1])
 ```
 
 ### Python versions
-Ensure you are using Python 3.7 as we are no longer supporting Python 2.
+Ensure you are using Python 3.6 as we are no longer supporting Python 2.
 
 You can check your Python version at the command line by running
 `python --version`.
