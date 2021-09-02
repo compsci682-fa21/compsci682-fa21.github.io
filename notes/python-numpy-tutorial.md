@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Python Numpy Tutorial
+title: Python Numpy Tutorial (with Jupyter and Colab)
 permalink: /notes/python-numpy-tutorial/
 ---
 
