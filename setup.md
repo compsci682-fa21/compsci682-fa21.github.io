@@ -81,9 +81,9 @@ If you'd like to (instead of Anaconda) go with a more manual and risky installat
 **For Linux / MacOS**
 
 ```bash
-cd assignment1
-conda create -n cs682 python=3.6	# Create environment
-conda activate cs682				# Activate the environment
+cd cs682
+conda create -n compsci682 python=3.6	# Create environment
+conda activate compsci682				# Activate the environment
 pip install -r requirements.txt		# Install dependencies
 conda install jupyter			 # Install Jupyter
 # Work on the assignment for a while ...
@@ -93,9 +93,9 @@ deactivate                       # Exit the virtual environment
 **For Windows**
 
 ```bash
-cd assignment1
-conda create -n cs682 python=3.6	# Create environment
-conda activate cs682				# Activate the environment
+cd cs682
+conda create -n compsci682 python=3.6	# Create environment
+conda activate compsci682				# Activate the environment
 pip install -r requirements.txt		# Install dependencies
 # Work on the assignment for a while ...
 deactivate                       # Exit the virtual environment
