@@ -1,0 +1,834 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@compsci682-fa21
+compsci682-fa20 /
+compsci682-fa20.github.io
+forked from compsci682-fa19/compsci682-fa19.github.io
+
+0
+0
+
+    3
+
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+
+    Insights
+
+compsci682-fa20.github.io/syllabus.html
+Jong-Chyi Su edit
+Latest commit 218e545 on Nov 23, 2020
+History
+5 contributors
+@jcfredsu
+@suhangpro
+@compsci682-fa20
+@compsci682-fa18
+@ttakahashi765
+789 lines (732 sloc) 33.3 KB
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML4 meta tags forcing no-caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="icon" href="/favicon.ico?">
+
+    <title>COMPSCI 682 Neural Networks: A Modern Introduction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+<!--     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--
+    [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     [endif]
+-->
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-custom">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<!--          <a class="navbar-brand" href="https://www.cics.umass.edu/">COMPSCI697L</a>-->
+          <a class="navbar-brand" href="https://www.cics.umass.edu/"><img style="max-height:15px; margin-top: 1px;"
+             src="/assets/fig/umasslogo2.png"></a>
+<!--          <a class="navbar-brand" href="#">COMPSCI697L</a>-->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/index.html">Home</a></li>
+            <li class="active"><a href="/syllabus.html">Syllabus</a></li>
+            <li><a href="/notes/">Notes</a></li>
+            <li><a href="/assignments.html">Assignments</a></li>
+            <li><a href="/projects/">Project</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+<h2>COMPSCI 682 Neural Networks: A Modern Introduction</h2>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Note</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li>This is a tentative class outline and is subject to change throughout the semester. </li>
+    <li>Some slides listed here are from previous semsesters. If there are changes, slides will be updated after each lecture.</li>
+          </ul>
+        </div>
+      </div>
+<div class="panel panel-default">
+<table class="table">
+  <tbody><tr class="active">
+    <th>Event Type</th><th class="footer-col-4">Date</th><th class="footer-col-3">Description</th><th>Course Materials</th>
+  </tr>
+  <tr>
+    <td>Lecture</td> <!-- Lecture 1 -->
+    <td>Tuesday, Aug. 25</td>
+    <td>Intro to Deep Learning, historical context.</td>
+    <td>
+<!--      <a href="https://docs.google.com/presentation/d/1NceEtoS8p8sjZuGjode_z4shWzhbq-wGtx2BrTOX0bg/edit?usp=sharing">[slides]</a><br>-->
+        <a href="https://docs.google.com/presentation/d/1b1o2tRsnKRVoE_FsR3wWQ3Hw_6nhobFksIhCgZrHmdI/edit#slide=id.g2527b07b1a_3_144">[slides]</a><br>                
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/vNRkI-n3qGdLR9bC2UftQIViG4L-X6a80CkYqfRfzEzjHKiR0ap7Oyd2vLMMXqBz">[recorded video of lecture]</a><br><p style="color:red">(to be removed on August 31st)</p> -->
+      <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
+      <a href="notes/jupyter-tutorial/">[jupyter tutorial]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td> <!-- Lecture 2 -->
+    <td>Thursday, Aug. 27</td>
+    <td>Image classification and the data-driven approach <br> k-nearest neighbor <br> Linear classification</td>
+    <td>
+        <!-- <a href="https://drive.google.com/open?id=1q79sB0g4sV5tbvbPhht-PxwHPZYnfXtY1ioXnrFH6j8">[slides]</a><br>-->
+  <a href="https://docs.google.com/presentation/d/1WhBdTFGi-Qn0HRgiJZVJAxoF-6Jye7CZ3001k7opR5g/edit?usp=sharing">[slides]</a><br>
+  <!-- <a href="https://umass-amherst.zoom.us/rec/share/5fwqLYvP7VFOfZHD9kScXbE6HNy6T6a8hCYfqPZfyh0ZxQJ0Pz7I2rtVruT23BEy">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 2nd)</p> -->
+      <a href="notes/classification/">[image classification notes]</a><br>
+      <a href="notes/linear-classify/">[linear classification notes]</a><br>
+    </td>
+  </tr>   
+  <tr>
+    <td>Lecture</td> <!-- Lecture 3 -->
+    <td>Tuesday, Sept. 1</td>
+    <td>
+        Loss functions
+    </td>
+    <td>
+      <!--<a href="https://drive.google.com/open?id=1UTbr4Ihs4gTrkg4c7b9lsJmsRKqAFjI_mhmR7NLpdvE">[slides]</a><br>-->
+      <a href="https://docs.google.com/presentation/d/1EAS-fIGVU4Ql-oDmprTH6aMM5BaMt488dXlMtcOsxJ8/edit?usp=sharing">[slides]</a><br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/PqgAW6EvymyNO5H3NY7-wYaebrOOfqo_qNYi9MfV7YwL1LJoy18IWzAvVlx61HFm.AYcrGpeH7iM-3cW5">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 7th)</p> -->
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td> <!-- Lecture 4 -->
+    <td>Thursday, Sept. 3</td>
+    <td>
+        Optimization: Stochastic Gradient Descent and Backpropagation
+    </td>
+    <td>
+      <!--<a href="https://drive.google.com/open?id=1ezJHfKagJuIOzYcBJUxTrns6CY6vy4gvMR5jHJsLa-g">[slides]</a><br>-->
+      <a href = "https://docs.google.com/presentation/d/13DGWcqGFbQzykyBOKo-RurhCM-30o3VkcYdOTl_stTg/edit?usp=sharing">[slides]</a><br>
+      <a href="notes/optimization-1/">[optimization notes]</a><br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/IxwA1Eb4HC_HuwsvLuuphiYmWSKDEQsAm8_IDWq-k1ATbBfNrg7LdXFJkWvdANWt.h_zF9gkTIShyEtrT">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 9th)</p> -->
+    </td>
+  </tr>
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Sept. 4</td>
+    <td>(8:30-9:30am) Slicing and broadcasting in Python</td>
+    <td>
+    <a href="notes/compsci682_extra_session_1_090320.ipynb">[slicing and broadcasting ipynb]</a><br>
+    </td>
+  </tr>      
+      
+  <tr>
+    <td>Lecture</td> <!-- Lecture 5 -->
+    <td>Tuesday, Sept. 8</td>
+    <td>
+        Backpropagation &amp; Neural Networks I
+    </td>
+    <td>
+      <!--<a href="https://drive.google.com/open?id=1tBXYBIEDK5l_A1g41z2PVgx3fbKVcAaaT0OUuEZyAWY">[slides]</a><br>-->
+      <a href="https://docs.google.com/presentation/d/1gQMaX0kU3m8rgK7ltbT2MsuOo3EI8dDwSjie2RALWEg/edit?usp=sharing">[slides]</a><br>
+      <a href="notes/optimization-2/">[backprop notes]</a><br>
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/Pl7TZuUb1CLvzfPEPz_5DkfTIpZDgMihdWYAGzgLErK68Tu566z6YhaeoOF7D5vO.tuRWwEnXjuYBU7LK">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 15th)</p> -->
+      related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td> <!-- Lecture 6 -->
+    <td>Thursday, Sept. 10</td>
+    <td>
+        Neural Networks II<br>
+        Higher-level representations, image features<br>
+        Vector, Matrix, and Tensor Derivatives
+    </td>
+    <td>
+      <!-- <a href="https://docs.google.com/presentation/d/1klIUc7Y2B_gM2ab1slsacP1EWZdQ_oxm6_6hJLWf8NA/edit?usp=sharing">[slides]</a><br> -->
+      <!-- <a href="https://docs.google.com/presentation/d/17AxFpAKP562pX-1D9-cZihu5lVig3Dw29Dv-DRABY2E/edit#slide=id.p">[slides]</a><br> -->
+      <a href="https://docs.google.com/presentation/d/1h0suj_yA3tIBnVtc6_bM26WZeNYpW7GXuNDE687BupA/edit?usp=sharing">[slides]</a><br>     
+      handout 1: <a href="/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
+      handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
+      <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)<br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/VC_0HTvghdmkjRsTGb-bsWkKFNQoHMH1c8k4xfJr-FbTrJ0KetEbP1ezLkou88Lg.ZD_N-7EOrjp6nQVO">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 17th)</p> -->
+    </td>
+  </tr>      
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Sept. 11</td>
+    <td>(8:30-9:30am) Vector, Matrix, Tensor Derivatives and Backpropagation</td>
+    <td><a href="https://compsci682-fa20.github.io/docs/vecDerivs.pdf">[notes]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Sept. 15</td>
+    <td>
+        Neural Networks III <br>
+        Training Neural Networks I <br>
+        Activation Functions
+    </td>
+    <td>
+  <!-- <a href="https://docs.google.com/presentation/d/1NMhCe_gYOTbVfGQRSuEJCGuMTishXAdI8_2WA9cG4D4/edit#slide=id.p">[slides]</a><br> -->
+        <a href="https://docs.google.com/presentation/d/1jsCD9EJKfBNnvTIrMZWIN8K9OS-N63kNxylVctarpGU/edit?usp=sharing">[slides]</a><br>
+  <a href="notes/neural-networks-1/">[Neural Nets notes 1]</a>
+        tips/tricks:
+        <a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">[1]</a>,
+        <a href="http://arxiv.org/pdf/1206.5533v2.pdf">[2]</a> (optional)<br>
+        <!-- <a href="https://umass-amherst.zoom.us/rec/share/TfwfGyXAxAts4boFvgrVfYnnddagXJScgUgczja_KFjCDHTMnKSyvIIinY7_DxUT.RTrY_zTtD45sbzsb">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 22nd)</p> -->
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Sept. 17</td>
+    <td>
+        Training Neural Networks II: <br>
+        weight initialization, batch normalization
+    </td>
+    <td>
+      <!--<a href="https://docs.google.com/presentation/d/1e_yRKaUBS9MXWRR98GCQev_HAx-upL4O2y-UUna1B-8/edit#slide=id.p">[slides]</a><br> -->
+      <a href="https://docs.google.com/presentation/d/1LVtH697SJfdXlQEmd9K1NiNI1dyU6OfqMtjQBJgnSpw/edit?usp=sharing">[slides]</a><br> 
+        <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br> 
+        <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a><br>
+        <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nY0pzQWhoZnVVWDQ/view?usp=sharing">Copula Normalization</a> (optional)<br>
+        <!-- <a href="https://umass-amherst.zoom.us/rec/share/Nt-wDv6TS33d5DW_UHLAF49kHD05cvM8nzMqgAJp5-QtU1sHNOnV9KFNlHEkvDvY.cpfgUYNaL_8nbR-0">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 24th)</p> -->
+    </td>
+  </tr>      
+  <!--<tr class="info">
+    <td>Optional Discussion</td>
+    <td>Friday, Sept. 21</td>
+    <td>No discussion section</td>
+    <td></td>
+  </tr>-->
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Sept. 22</td>
+    <td>
+        Training Neural Networks III: <br>
+        babysitting the learning process, hyperparameter optimization
+    </td>
+    <td>
+      <!--<a href="https://docs.google.com/presentation/d/1Raxi-EZMKbNzRWliKqZKR8JqWh5mV_XR6QMeaQvaTPE/edit#slide=id.p">[slides]</a><br>-->
+      <a href="https://docs.google.com/presentation/d/1e9Ico79mIs4V0xtP0xlTsSnQAQqLTCzRPyk7atQ70pw/edit?usp=sharing">[slides]</a><br>
+        <a href="https://arxiv.org/abs/1206.5533">[Bengio 2012]</a> (optional)<br>
+        <!-- <a href="https://umass-amherst.zoom.us/rec/share/M_qKmve5bMNdmBmKBiD-O-trcUWi-Cnp2nni-d_58kmLsa9HRl1dHXDOb5kvde9a.w4dLCTrPppo9fWDq">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Sep. 29th)</p> -->
+    </td>
+  </tr>      
+ <tr>
+    <td>Lecture</td>
+    <td>Thursday, Sept. 24</td>
+    <td>
+        Training Neural Network IV: <br>
+        model ensembles, dropout
+    </td>
+    <td>
+      <!--<a href="https://docs.google.com/presentation/d/1UsLCPg7_DVgwPzbklqoDEq5YALV_qsE5BzO2kKMvM8s/edit?usp=sharing">[slides]</a><br>-->
+      <a href="https://docs.google.com/presentation/d/1QXbNi-wM5Hi4i1YiU0X3DM7GJM1XxWOoynJXERqzoY4/edit?usp=sharing">[slides]</a><br>
+      <a href="notes/neural-networks-3/">[Neural Nets notes 3]</a><br>
+        <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf">LeNet</a> (optional)<br>
+        <!-- <a href="https://umass-amherst.zoom.us/rec/share/bHgD0lToMAM01AIKi4auLW72aySJ8stvQvptuDm_6A7xw6DvuN1YnYJTdcNfnQws.bMOhT7BZ7AkcXYb9">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 1st)</p> -->
+    </td>
+  </tr> 
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Sept. 25</td>
+    <td>(8:30-9:30am) A closer look at the maths inside batch normalization</td>
+    <td> <a href="https://drive.google.com/file/d/1px5omjnUgUeuvoQydygj2MFSG1qRKj7i/view?usp=sharing">[notes]</a>
+    </td>
+  </tr>
+  <!--<tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Oct. 5</td>
+    <td>(11:05-12:05 CS142) Google Cloud, PyTorch, Tensorflow tutorials</td>
+    <td><a href="https://compsci682-fa19.github.io/gce-tutorial">[Google Cloud Tutorial]</a><br>
+    <a href="http://cs231n.stanford.edu/notebooks/pytorch_tutorial.ipynb">[PyTorch Notebook (from Stanford)]</a></td>
+  </tr>-->
+      
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Sept. 29</td>
+    <td>
+        Training Neural Network V: <br>
+        parameter updates<br>
+    </td>
+    <td>
+        <!--<a href="https://docs.google.com/presentation/d/1d-_CccMYaJCt_QR7KC23sIB8DzLxSrJ346PrpLD8F7A/edit?usp=sharing">[slides]</a><br>--> 
+        <a href="https://docs.google.com/presentation/d/1Rw91Znhz7otRNN3E5xyqRPvHz43f_OZoc24ojDWbnJI/edit?usp=sharing">[slides]</a><br>
+        <!-- <a href="https://umass-amherst.zoom.us/rec/share/aLx3F5UACXyAqbxCXi1OtMGcKjDjDLCiyNF5B9AICdw0CwUSBTrFzsddYKmfRgq6.nDNGB37RCSv68vah">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 6th)</p> -->
+    </td>
+  </tr>   
+
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Oct. 1</td>
+    <td>
+        Convolutional Neural Networks: <br>
+        convolution layer, pooling layer, fully connected layer <br>
+    </td>
+    <td>
+        <!--<a href="https://docs.google.com/presentation/d/1HYoObuAeoamLtUONdCJ_h9IWMWliAUZVwZYNVXPW3Io/edit?usp=sharing">[slides]</a><br>-->
+  <a href="https://docs.google.com/presentation/d/1biUSFStj3EViftlNTpLDQ6tksHiLYQY-yMFuVN8nIWQ/edit?usp=sharing">[slides]</a><br>
+  <!-- <a href="https://umass-amherst.zoom.us/rec/share/PJsL77psN09jJVG3vMjdKN1xMffpKbMwfsy4631l_nItEcN7h-CdFmXei-9vL30m.OIXcrjKeIGfv3EHV">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 8th)</p> -->
+  <!-- <a href="https://docs.google.com/presentation/d/1iVrs2ut8OR_NH8pte-uwXeX5JzOhOMK-DBGG2JzKTCI/edit?usp=sharing">[slides]</a> -->
+    </td>
+  </tr>
+  
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Oct. 2</td>
+    <td>(8:30-9:30am) Convolutional neural networks</td>
+    <td>
+      <a href="https://docs.google.com/presentation/d/1wullBACgzT2BScmdVkBMS3srlckw0RtIubzm8ydEwp8/edit?usp=sharing">[slides]</a>
+    </td>
+  </tr>
+  
+<!--   <tr class="info">
+    <td>No Class (Monday Schedule) </td>
+    <td>Tuesday, Oct. </td>
+    <td>Monday class schedule will be followed</td>
+    <td>
+    </td>
+  </tr> -->
+
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Oct. 6</td>
+    <td>
+        Convolutional Neural Networks: (cont.)<br>
+        convolution layer, pooling layer, fully connected layer <br>
+    </td>
+    <td>
+      <!-- <a href="https://docs.google.com/presentation/d/1iVrs2ut8OR_NH8pte-uwXeX5JzOhOMK-DBGG2JzKTCI/edit?usp=sharing">[slides]</a> -->
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/TPauJCxnx_k1t2bDsoRoNQyM3j71ungZufQRINDakPRehTnd5PIiYMfHs40rl1SU.7Pi7VerfYvjrivpF">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 13th)</p> -->
+      
+    </td>  </tr>
+
+  <!--<tr>
+    <td>Lecture</td>
+    <td>Tuesday, Oct. 22</td>
+    <td>
+        Geust Lecture: <a href="https://people.cs.umass.edu/~smaji/">Subhransu Maji</a>, Deep Texture Representations<br>
+    </td>
+    <td>
+        <a href="http://supermoe.cs.umass.edu/682/682-texture-lecture.pdf">[slides]</a>
+    </td>
+  </tr>-->
+ 
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Oct. 8</td>
+    <td>ConvNets for spatial localization, Object detection<br>
+    </td>
+    <td>
+      <!--<a href="https://docs.google.com/presentation/d/1KKDahrz1_LgdmlvJcW06EttPUPL6y2UqShCMhP6mxCA/edit?usp=sharing">[slides]</a><br>-->
+      <a href="https://docs.google.com/presentation/d/1yc9ehnOw_XSs-9GMJ_z676ZfWDLhei_kp6tWjvSLTBE/edit?usp=sharing">[slides]</a><br>
+      <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf">FCN</a> (optional) <br>
+      <a href="https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173">mAP</a> (optional) <br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/F2PEZDhKAYTEHq9InwySNTFk8siO0J3TJNA7Q_CTI-fSlQA-T1yk0o5ZXgPjkOw.BroaZ-DNcwyUW6tQ">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 15th)</p> -->
+    </td>
+  </tr>
+
+
+   <tr>
+     <td>Lecture</td>
+       <td>Tuesday, Oct. 13</td>
+     <td>
+        ConvNets for spatial localization, Object detection (cont.)
+     </td>
+     <td>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/Ekin01SSB-tTTFjr4eyJ8Avn-5UWo7nHxbGCCVusMCadBNE_cIcqm0EsgSGp7Gi6.3l0P7rsEVALQvmvW">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 21st)</p> -->
+      <!-- <a href="https://docs.google.com/presentation/d/1l75Lpv8caesyvYWWfo0gfnZHGPuwQdjxf8x1oOSiAm8/edit?usp=sharing">[slides]</a><br>-->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Thursday, Oct. 15</td>
+     <td>
+        Understanding and visualizing Convolutional Neural Networks<br>
+     </td>
+     <td>
+      <a href="https://docs.google.com/presentation/d/1ekCcBZfJtIMpHriPA7yJcXyPFK6oonpZrX6h5hKtcfk/edit?usp=sharing">[slides]</a><br>
+      <a href="https://ezyang.github.io/convolution-visualizer/index.html"> a tool to visualize convolutions</a><br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/_EOG7_kwAZnOZx6C1xrHMYPVlSgCkgSKUH_VqEEi5-FF8v1J6OnnlHFlWipyPD44.K5pjMxGBNZbLNtOF">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 23rd)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Tuesday, Oct. 20</td>
+     <td>
+        Understanding and visualizing Convolutional Neural Networks (cont.)
+     </td>
+     <td>
+     <!-- <a href="https://umass-amherst.zoom.us/rec/share/lisEAolyPy0IiL1fDZwxPu-GVckF8ksAh6Po4e4c_RvV9c4hmE1wOIpUFSqK1YYj.2l_wG_5fl1yX8dN2">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 27th)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Thursday, Oct. 22</td>
+     <td>
+        Creating Adversarial Examples
+     </td>
+     <td> 
+    <a href="https://docs.google.com/presentation/d/13yo8gf4wp2s9QvcJDkMsXiSpEDzwZXsXO6D1pqfBaK0/edit?usp=sharing">[slides]</a><br>
+    <!-- <a href="https://umass-amherst.zoom.us/rec/share/wBoH4Q2Vakto6zqSLDpPFeFtW8xE6fknXegd-GeuBvxR3IoVjnTbwUqtkhDSTGVP.litEY0EejFwm29gX">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Oct. 29th)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Tuesday, Oct. 27</td>
+     <td>
+        Finish Generative Adversarial Networks, Start RNNs
+     </td>
+    
+     <td>
+       <a href="https://docs.google.com/presentation/d/1LOEEPBocEBr4bucsbA-V6Pjnz-dVbFcmRfYOdbOS9pQ/edit?usp=sharing">[slides]</a><br>
+       <!-- <a href="https://umass-amherst.zoom.us/rec/share/ePt77kA9iG4AwPR2A9ehN_U83lvzEEs-6U2sjV-4Cs8hlHf-kUBYNSH_DHqGj0Kc.0IDAY0Ja5EG8h6hG">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Nov. 3rd)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Thursday, Oct. 29</td>
+     <td>
+        Finish RNNs.
+     </td>
+     <td>
+       <a href="https://docs.google.com/presentation/d/1wklRjHIAxqb9D-wcASV6i4frCCYJVKK6rwejhWe4wQ8/edit?usp=sharing">[slides]</a><br>
+       <!-- <a href="https://umass-amherst.zoom.us/rec/share/TieDsKHo9uEvWuDoVzZs-FX9o06yEjUGSZzyYOIokFo2Z-0SbuC-Xevj9oExjI2t.uP0tRCbnqoCoype-">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Nov. 5rd)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Tuesday, Nov. 3</td>
+     <td>
+         Do word embeddings, ElMO? Attention and Self-Attention in NLP, Transformers
+     </td>
+     <td>
+       <a href="https://docs.google.com/presentation/d/1QkgYc7p3aA3R7PD0syJ3VPqv9oukDKIuF-eR2vhL73w/edit?usp=sharing">[slides]</a><br>
+       <!-- <a href="https://umass-amherst.zoom.us/rec/share/1DPQWReVzg-DRL8xtFDWp-sCGUo6ajAWyjm2IS1AtBOsxabc0rymHD5o8pXXQEZd.4M_Sty1t8duUPivZ-">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Nov. 10th)</p> -->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Thursday, Nov. 5</td>
+     <td>
+        Exam review and instructions for exam
+     </td>
+     <td>
+      <a href="https://docs.google.com/presentation/d/1GOwVZTrJ82grhw0tTnOHRbVTL5dij_IohLw0LRrSvfk/edit?usp=sharing">[slides]</a><br>
+      <a href="notes/682_Midterm_Review_Fall_2020.pdf">[review sheet]</a><br>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/HjBOGueyab3_zhx_jGiyNrtY1KtuS1CUY9YB1VQBhd5aGxThJlNtoxMQlFPAT5t_.6jqaA5c_C5BJYooQ">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Nov. 12nd)</p> -->
+     </td>
+  </tr>
+
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Nov. 6</td>
+    <td>(8:30-9:30am) Midterm Review</td>
+    <td>
+      <!-- <a href="https://docs.google.com/presentation/d/1wullBACgzT2BScmdVkBMS3srlckw0RtIubzm8ydEwp8/edit?usp=sharing">[slides]</a> -->
+      <!-- <a href="https://umass-amherst.zoom.us/rec/play/ujz8vhkoSYfHONnfVbs6aRFmWU6iWLSFMcFAW3dENyopM2pYByMjoY3mm-ZXv7JkgbcuNLwb4Tal3sRu.z1oOBzZceIg0jOHJ?continueMode=true">[recorded video of lecture]</a><br><p style="color:red">(to be removed on Nov. 12nd )</p> -->
+    </td>
+  </tr>
+
+  <tr>
+     <td>Exam</td>
+       <td>Tuesday, Nov. 10</td>
+     <td>
+        Midterm Exam (no class)
+     </td>
+     <td>
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Thursday, Nov. 12</td>
+     <td>
+          Face recognition and the dangers of AI technology.
+     </td>
+     <td>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/nXICaekZsd5SNRy16Cm8iSfBzj6aM74xQEXaCr0_j0WlcDbibSs1r2QDzOFVn7pn.waLQWmn5XY4vK3vh">[recorded video of lecture]</a> 
+      <p style="color:red">(to be removed on Nov. 19th)</p>-->
+     </td>
+  </tr>
+
+  <tr>
+     <td>Lecture</td>
+       <td>Tuesday, Nov. 17</td>
+     <td>
+        Final project presentation instructions and highlights of recent DNN research.
+     </td>
+     <td>
+      <!-- <a href="https://umass-amherst.zoom.us/rec/share/5eHd8IiVrYw66ZZeV-UzrTAhXx-oNUC3l-BpzmDEXSwoy6oEWiDqjMNycsdzD7DF.jmEnLBsKn30d7NNh">[recorded video of lecture]</a>
+      <p style="color:red">(to be removed on Nov. 24th)</p> -->
+     </td>
+  </tr>
+
+
+  <tr >
+    <td>Final Presentation</td>
+    <td>Thursday, Nov. 19</td>
+    <td>
+       Final presentation<br>
+       Final report due<br>
+       (Last day of classes)
+    </td>
+    <td>
+    </td>
+  </tr> 
+
+<!-- Fall 2020        
+  <tr>
+    <td>TA Lecture</td>
+    <td>Thursday, Oct. 15</td>      
+    <td>
+      Special topic (lecture given by Hang Su): Content-adaptive Convolutions
+      </td>
+    <td>    <a href="https://www.dropbox.com/s/l4nfccf8vpgz1dh/682_hsu_1029.pdf">[slides]</a><br>
+      <a href="https://arxiv.org/abs/1904.05373">PACNet</a> (optional)
+      </td>
+  </tr>    
+  <tr>
+    <td>TA Lecture</td>
+    <td>Tuesday, Oct. 20</td>      
+    <td>
+      Special topic (lecture given by Pia Bideau): Optical flow prediction with PWCNet
+      </td>
+    <td>
+      <a href="https://arxiv.org/abs/1709.02371">PWCNet</a> (optional)
+      </td>
+  </tr>    
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Oct. 22</td>
+    <td>
+     Recurrent Neural Networks (RNN)
+    </td>
+    <td>
+      <a href="https://docs.google.com/presentation/d/17Hy6ME_zGEhYUXvV0P6OVpkSfmgVo6iqjm20A4NaAIo/edit?usp=sharing">[slides]</a><br>
+      <a href="http://www.deeplearningbook.org/contents/rnn.html">DL book RNN chapter</a> (optional)<br>
+      <a href="https://gist.github.com/karpathy/d4dee566867f8291f086">min-char-rnn</a>, <a href="https://github.com/karpathy/char-rnn">char-rnn</a>, <a href="https://github.com/karpathy/neuraltalk2">neuraltalk2</a> (optional)       
+     Fall 2020 --> 
+     <!--
+        <a href="https://docs.google.com/presentation/d/17P1pFTG7seo6EuDhLrJDI6Bb7ce1_mUd28qhJKe5j_k/edit?usp=sharing">[slides]</a><br>
+        <a href="https://arxiv.org/abs/1512.03385">ResNet</a> (optional)
+      -->
+   <!--Fall 2020
+    </td>
+  </tr>
+  Fall 2020 -->
+<!--
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Nov. 2</td>
+    <td>
+      No discussion section<br>
+    </td>
+    <td>-->
+      <!--
+        <a href="https://docs.google.com/presentation/d/17P1pFTG7seo6EuDhLrJDI6Bb7ce1_mUd28qhJKe5j_k/edit?usp=sharing">[slides]</a> (cont.)<br>
+        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf">FCN</a> (optional)
+      -->
+ <!--   </td>
+  </tr>-->
+
+  <!--Fall 2020   
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Oct. 27</td>
+    <td>
+  Fall 2020 -->
+      <!-- Long Short Term Memory (LSTM) -->   
+  <!--Fall 2020 
+      Transformer<br>
+    </td>
+    <td>
+Fall 2020 -->
+      <!-- <a href="https://docs.google.com/presentation/d/1DcHsDnG-XiyjuvLcHWRR2sMnBzwBMlJ7nV8Bvq5Nh50/edit?usp=sharing">[slides]</a><br> -->
+      <!-- <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of RNN</a> (optional) <br> -->
+      <!-- <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a> (optional) -->
+<!--Fall 2020 
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Oct. 29</td>
+    <td>
+      Transformer (cont.) <br>      
+    </td>
+    <td>
+    </td>
+  </tr>
+      
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Nov. 3</td>      
+    <td>
+      Understanding and visualizing Convolutional Neural Networks<br>
+      Backprop into image: Visualizations, deep dream
+    </td>
+    <td>
+       <a href="https://docs.google.com/presentation/d/1HlFEcNkmDLD29fxUkwZLr2FwnicJ1FHhMzDrECeyFi4/edit?usp=sharing">[slides]</a><br>
+      <a href="notes/understanding-cnn/">[visualization notes]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Nov. 5</td>      
+    <td>
+      Visualization (cont.)
+    </td>
+    <td>
+    </td>
+  </tr>
+  Fall 2020 --> 
+  <!--<tr class="info">
+    <td>Optional Discussion</td>
+    <td>Friday, Nov. 16</td>
+    <td>No discussion section</td>
+    <td>
+    </td>
+  </tr>-->
+      
+<!--
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Nov. 27</td>
+    <td>
+      Recurrent Neural Networks (RNN) (cont.) <br>
+      Long Short Term Memory (LSTM)
+    </td>
+    <td>
+      <a href="https://docs.google.com/presentation/d/1DcHsDnG-XiyjuvLcHWRR2sMnBzwBMlJ7nV8Bvq5Nh50/edit?usp=sharing">[slides]</a><br>
+      <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of RNN</a> (optional) <br>
+      <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a> (optional)
+    </td>
+  </tr>
+-->
+ <!--Fall 2020      
+ <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Nov. 10</td>      
+    <td>
+      Generative Models and GANs
+    </td>
+    <td>
+      <a href="https://docs.google.com/presentation/d/1wDkf56hb0NnEisgd21sfND0YqUBCYN8SdGAlRopntkM/edit?usp=sharing">[slides]</a>
+    </td>
+  </tr>  
+  Fall 2020 -->
+    
+  <!--<tr class="info">
+    <td>Optional Discussion</td>
+    <td>Friday, Nov. 30</td>
+    <td>No discussion section</td>
+    <td></td>
+  </tr>  -->    
+
+  
+  <!--Fall 2020
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Nov. 12</td>      
+    <td>
+      Training ConvNets in practice
+      </td>
+    <td>
+      <a href="https://docs.google.com/presentation/d/10-WUrK5PG7l1D0RdVCEs_xZVq4tZkqZbBd7Ga3s6DTE/edit?usp=sharing">[slides]</a>
+      </td>
+  </tr>    
+      
+  <tr>
+    <td>Lecture</td>
+    <td>Tuesday, Nov. 17</td>      
+    <td>
+   Fall 2020 -->
+      <!-- Guest Lecture by <a href="https://people.eecs.berkeley.edu/~shelhamer/">Evan Shelhamer</a>  -->
+   <!--Fall 2020
+      Additional topics (TBD)
+      </td>
+    <td>
+      </td>
+  </tr>    
+  Fall 2020 -->
+<!-- 
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Dec. 5</td>
+    <td>
+      Additional topics in Stanford cs231n <br>
+      Societal implications of AI
+    </td>
+    <td>
+        Stanford cs231n slides not covered in our course: <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nY2toWTZIekZyRkk/view?usp=sharing">Software Packages</a>, <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nazc5ajZhZzhKTnM/view?usp=sharing">Segmentation & Attention</a>, <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nbVRkbm1tUnRUanM/view?usp=sharing">Videos & Unsupervised Learning</a>
+    </td>
+  </tr>
+-->
+<!--Fall 2020
+  <tr>
+    <td>Lecture</td>
+    <td>Thursday, Nov. 19</td>      
+    <td>
+      Additional topics (TBD)
+      </td>
+    <td>
+      </td>
+  </tr>    
+  <tr class="info">
+    <td>No Class </td>
+    <td>Tuesday, Nov. 24</td>
+    <td>Thanksgiving recess</td>
+    <td>
+    </td>
+  </tr>
+      
+  <tr class="info">
+    <td>No Class</td>
+    <td>Thursday, Nov. 26</td>
+    <td>Thanksgiving recess</td>
+    <td>
+    </td>
+  </tr>
+      
+  <tr class="danger">
+    <td>Final </td>
+    <td>TBD</td>
+    <td>
+       Final exam
+    </td>
+    <td>
+    </td>
+  </tr> 
+Fall 2020 -->
+</tbody></table>
+</div>
+
+    </div><!--/.container-->
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-col-1 column">
+          <ul>
+            <li><a href="https://github.com/compsci682-fa20">
+              <span class="icon github">
+                <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
+                  c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
+                  c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
+                  c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
+                  C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65
+                  c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261
+                  c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082
+                  c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129
+                  c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+              <span class="username">compsci682-fa20</span>
+            </a>
+            </li>
+            <li>
+              <a href="mailto:compsci682@gmail.com">compsci682@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col-2 column">
+
+        </div>
+
+        <div class="footer-col-3 column">
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/offcanvas.js"></script>
+  </body>
+</html>
+
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Loading complete
