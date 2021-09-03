@@ -33,6 +33,7 @@ One you successfully install Colab, you can right click on your notebooks and op
 **Workflow**. Every assignment provides you with a download link to a zip file containing Colab notebooks and Python starter code. You can upload the folder to Drive, open the notebooks in Colab and work on them, then save your progress back to Drive. We encourage you to watch the tutorial video below which covers the recommended workflow using assignment 1 as an example.
 
 <u> The video is made specific to Standford CS231n and can be adapted to our course</u>
+
 <iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/IZUz4pRYlus" frameborder="0" allowfullscreen></iframe>
 
 **Best Practices**. There are a few things you should be aware of when working with Colab. The first thing to note is that resources aren't guaranteed (this is the price for being free). If you are idle for a certain amount of time or your total connection time exceeds the maximum allowed time (~12 hours), the Colab VM will disconnect. This means any unsaved progress will be lost. <font color="red"><strong>Thus, get into the habit of frequently saving your code whilst working on assignments.</strong></font> To read more about resource limitations in Colab, read their FAQ [here](https://research.google.com/colaboratory/faq.html).
