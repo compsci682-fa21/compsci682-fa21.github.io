@@ -94,6 +94,6 @@ To make sure everything is working properly, **remember to do a clean run ("Kern
 
 **2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
-**3. ** Please submit <UmassID>.zip and the pdf to Gradescope.
+**3.** Please submit <UmassID>.zip and the pdf to Gradescope.
 
 If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`.
