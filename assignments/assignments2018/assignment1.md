@@ -90,17 +90,10 @@ Once you have completed all notebooks and filled out the necessary code, you nee
 
 To make sure everything is working properly, **remember to do a clean run ("Kernel -> Restart & Run All") after you finish work for each notebook** and submit the final version with all the outputs. 
 
-**1.** Open `collect_submission.ipynb` in Colab and execute the notebook cells.
+**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you donot include the dataset folder in the zip.
 
-This notebook/script will:
+**2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
-* Generate a zip file of your code (`.py` and `.ipynb`) called `a1.zip`.
-* Convert all notebooks into a single PDF file.
+**3. ** Please submit <UmassID>.zip and the pdf to Gradescope.
 
-If your submission for this step was successful, you should see the following display message:
-
-`### Done! Please submit a1.zip and the pdfs to Gradescope. ###`
-
-If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `assignment1.zip`. 
-
-**2.** Submit the PDF and the zip file to [Gradescope](https://www.gradescope.com/).
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`.
