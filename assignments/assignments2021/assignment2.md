@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2018/assignment2/
+permalink: /assignments/assignments2021/assignment2/
 ---
 
 In this assignment you will practice writing backpropagation code, and training
