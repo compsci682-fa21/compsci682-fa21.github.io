@@ -52,33 +52,34 @@ After you have the CIFAR-10 data, you should start the Jupyter Notebook server f
 **NOTE:** If you are working in a virtual environment on OSX, you may encounter
 errors with matplotlib due to the [issues described here](http://matplotlib.org/faq/virtualenv_faq.html). You can work around this issue by starting the Jupyter server using the `start_jupyter_osx.sh` script from the `assignment2` directory; the script assumes that your virtual environment is named `.env`.
 
-### Q1: Fully-connected Neural Network (30 points)
-The Jupyter notebook `FullyConnectedNets.ipynb` will introduce you to our
+### Q1: Fully-connected Neural Network (16 points)
+The notebook `FullyConnectedNets.ipynb` will introduce you to our
 modular layer design, and then use those layers to implement fully-connected
 networks of arbitrary depth. To optimize these models you will implement several
 popular update rules.
 
-### Q2: Batch Normalization (30 points)
-In the Jupyter notebook `BatchNormalization.ipynb` you will implement batch
+### Q2: Batch Normalization (34 points)
+In the notebook `BatchNormalization.ipynb` you will implement batch
 normalization, and use it to train deep fully-connected networks.
 
 ### Q3: Dropout (10 points)
-The Jupyter notebook `Dropout.ipynb` will help you implement Dropout and explore
+The notebook `Dropout.ipynb` will help you implement Dropout and explore
 its effects on model generalization.
 
 ### Q4: ConvNet on CIFAR-10 (30 points)
-In the Jupyter Notebook `ConvolutionalNetworks.ipynb` you will implement several
+In the notebook `ConvolutionalNetworks.ipynb` you will implement several
 new layers that are commonly used in convolutional networks. You will train a
 (shallow) convolutional network on CIFAR-10, and it will then be up to you to
 train the best network that you can.
 
-### Q5: Do something extra! (up to +10 points)
-In the process of training your network, you should feel free to implement
-anything that you want to get better performance. You can modify the solver,
-implement additional layers, use different types of regularization, use an
-ensemble of models, or anything else that comes to mind. If you implement these
-or other ideas not covered in the assignment then you will be awarded some bonus
-points.
+### Q5: Do something extra! (10 points)
+For this last part, you will be working in either TensorFlow or PyTorch, two popular
+and powerful deep learning frameworks. **You only need to complete ONE of these two notebooks**.
+While you are welcome to explore both for your own learning, there will be no extrac credit.
+
+Open up either `PyTorch.ipynb` or `Tensorflow.ipynb`. There, you will learn how the framework
+works, culminating in training and convolutional network of your own design on CIFAR-10 to
+get the best performance you can.
 
 ### Submitting your work
 
