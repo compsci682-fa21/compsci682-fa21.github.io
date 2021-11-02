@@ -59,10 +59,10 @@ The goals of this assignment are as follows:
 The Jupyter notebook ``RNN_Captioning.ipynb`` will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
 
 ## Q2: Network Visualization: Saliency maps, Class Visualization, and Fooling Images (15 points)
-The Jupyter notebooks ``NetworkVisualization-TensorFlow.ipynb`` /``NetworkVisualization-PyTorch.ipynb`` will introduce the pretrained SqueezeNet model, compute gradients with respect to images, and use them to produce saliency maps and fooling images. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awardeded if you complete both notebooks.
+The Jupyter notebooks ``NetworkVisualization-TensorFlow.ipynb``/``NetworkVisualization-PyTorch.ipynb`` will introduce the pretrained SqueezeNet model, compute gradients with respect to images, and use them to produce saliency maps and fooling images. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awardeded if you complete both notebooks.
 
 ## Q3: Generative Adversarial Networks (15 points)
-In the Jupyter notebooks ``GANS-TensorFlow.ipynb`` / ``GANS-PyTorch.ipynb`` you will learn how to generate images that match a training dataset, and use these models to improve classifier performance when training on a large amount of unlabeled data and a small amount of labeled data. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awarded if you complete both notebooks.
+In the Jupyter notebooks ``GANS-TensorFlow.ipynb``/``GANS-PyTorch.ipynb`` you will learn how to generate images that match a training dataset, and use these models to improve classifier performance when training on a large amount of unlabeled data and a small amount of labeled data. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awarded if you complete both notebooks.
 
 ## Submitting your work:
 **Important**. Please make sure that the submitted notebooks have been run and the cell outputs are visible.
