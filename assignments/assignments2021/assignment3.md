@@ -4,95 +4,75 @@ mathjax: true
 permalink: /assignments/assignments2021/assignment3/
 ---
 
-In this assignment you will implement recurrent networks, and apply them to image captioning on Microsoft COCO. We will also introduce the TinyImageNet dataset, and use a pretrained model on this dataset to explore different applications of image gradients.
+**This assignment is due on Sunday, November 21 at 11:59pm EST.**
+
+Starter code containing Colab notebooks can be downloaded [here](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/assignments/assignments2021/assignment3.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
+
+- [Setup](#setup)
+- [Goals](#goals)
+- [Q1: Image Captioning with Vanilla RNNs (30 points)](#q1-image-captioning-with-vanilla-rnns)
+- [Q2: Network Visualization: Saliency Maps, Class Visualization, and Fooling Images (15 points)](#q2-networ-visualization)
+- [Q3: Generative Adversarial Networks (15 points)](#q4-generative-adversarial-networks)
+- [Submitting your work](#submitting-your-work)]
+
+
+## Setup
+Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment.
+
+In order to do the assignment, you will need to install either TensorFlow 1.7 (installation instructions [here](https://www.tensorflow.org/versions/r1.7/install/)) or PyTorch (>=0.4, up to 1.3 as of 10/23/2019, instructions [here](http://pytorch.org/)) depending on which notebooks you decide to complete.
+
+If you face difficulty re-using the python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch-cpu for the example):
+```conda remove --name cs682 --all # delete old environment if there is one
+conda create --name cs682 python=3.6
+conda activate cs682
+pip install -r requirements.txt
+conda install pytorch torchvision cpuonly -c pytorch
+```
+
+**Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
+
+Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
+
+**You can do Questions 2 and 3 in TensorFlow or PyTorch. There are two versions of each of these notebooks, one for TensorFlow and one for PyTorch. No extra credit will be awarded if you do a question in both TensorFlow and PyTorch.**
+
+## Goals
+In this assignment you will implement recurrent networks, and apply them to image captioning on Microsoft COCO. You will also explore methods for visualizing the features of a pretrained model on ImageNet, and also this model to implement Style Transfer. Finally, you will train a Generative Adversarial Network to generate images that look like a training dataset!
 
 The goals of this assignment are as follows:
 
-- Understand the architecture of *recurrent neural networks (RNNs)* and how they operate on sequences by sharing weights over time
-- Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
-- Understand how to sample from an RNN at test-time
-- Understand how to combine convolutional neural nets and recurrent nets to implement an image captioning system
-- Understand how a trained convolutional network can be used to compute gradients with respect to the input image
-- Implement and different applications of image gradients, including saliency maps, fooling images, class visualizations, feature inversion, and DeepDream.
+- Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time.
 
-## Setup
-Get the code as a zip file [here](http://vis-www.cs.umass.edu/697l/asgns/assignment3.zip). As for the dependencies:
+- Understand and implement both Vanilla RNNs and Long-Short Term Memory (LSTM) networks.
 
-**[Option 1] Use Anaconda:**
-The preferred approach for installing all the assignment dependencies is to use [Anaconda](https://www.continuum.io/downloads), which is a Python distribution that includes many of the most popular Python packages for science, math, engineering and data analysis. Once you install it you can skip all mentions of requirements and you're ready to go directly to working on the assignment.
+- Understand how to combine convolutional neural nets and recurrent nets to implement an image captioning system.
 
-**[Option 2] Manual install, virtual environment:**
-If you'd like to (instead of Anaconda) go with a more manual and risky installation route you will likely want to create a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for the project. If you choose not to use a virtual environment, it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment, run the following:
+- Explore various applications of image gradients, including saliency maps, fooling images, class visualizations.
 
-```bash
-cd assignment3
-sudo pip install virtualenv      # This may already be installed
-virtualenv .env                  # Create a virtual environment
-source .env/bin/activate         # Activate the virtual environment
-pip install -r requirements.txt  # Install dependencies
-# Work on the assignment for a while ...
-deactivate                       # Exit the virtual environment
-```
+- Understand and implement techniques for image style transfer.
 
-**Download data:**
-Once you have the starter code, you will need to download the processed MS-COCO dataset, the TinyImageNet dataset, and the pretrained TinyImageNet model. Run the following from the `assignment3` directory:
-
-```bash
-cd datasets
-./get_coco_captioning.sh
-./get_tiny_imagenet_a.sh
-./get_pretrained_model.sh
-```
-
-**Compile the Cython extension:** Convolutional Neural Networks require a very
-efficient implementation. We have implemented of the functionality using
-[Cython](http://cython.org/); you will need to compile the Cython extension
-before you can run the code. From the `assignment3/asgn3` directory, run the following
-command:
-
-```bash
-python setup.py build_ext --inplace
-```
-
-**Start Jupyter Notebook:**
-After you have the data, you should start the Jupyter Notebook server
-from the `assignment3` directory. If you are unfamiliar with Jupyter, you should 
-read our [Jupyter tutorial](/notes/jupyter-tutorial/).
-
-**NOTE:** If you are working in a virtual environment on OSX, you may encounter
-errors with matplotlib due to the
-[issues described here](http://matplotlib.org/faq/virtualenv_faq.html).
-You can work around this issue by starting the Jupyter server using the
-`start_ipython_osx.sh` script from the `assignment3` directory; the script
-assumes that your virtual environment is named `.env`.
+- Understand how to train and implement a Generative Adversarial Network (GAN) to produce images that resemble samples from a dataset.
 
 
-### Submitting your work:
+## Q1: Image Captioning with Vanilla RNNs (30 points)
+The Jupyter notebook ``RNN_Captioning.ipynb`` will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
+
+## Q2: Network Visualization: Saliency maps, Class Visualization, and Fooling Images (15 points)
+The Jupyter notebooks ``NetworkVisualization-TensorFlow.ipynb`` /``NetworkVisualization-PyTorch.ipynb`` will introduce the pretrained SqueezeNet model, compute gradients with respect to images, and use them to produce saliency maps and fooling images. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awardeded if you complete both notebooks.
+
+## Q3: Generative Adversarial Networks (15 points)
+In the Jupyter notebooks ``GANS-TensorFlow.ipynb`` / ``GANS-PyTorch.ipynb`` you will learn how to generate images that match a training dataset, and use these models to improve classifier performance when training on a large amount of unlabeled data and a small amount of labeled data. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awarded if you complete both notebooks.
+
+## Submitting your work:
+**Important**. Please make sure that the submitted notebooks have been run and the cell outputs are visible.
+
+Once you have completed all notebooks and filled out the necessary code, you need to follow the below instructions to submit your work:
+
 To make sure everything is working properly, **remember to do a clean run ("Kernel -> Restart & Run All") after you finish work for each notebook** and submit the final version with all the outputs. 
-Once you are done working, zip all the code and notebooks in a single file and upload it to Moodle. On Linux or macOS you can run the provided `collectSubmission.sh` script from `assignment3/` to produce a file `assignment3.zip`.
 
-### Q1: Image Captioning with Vanilla RNNs (40 points)
-The Jupyter notebook `RNN_Captioning.ipynb` will walk you through the
-implementation of an image captioning system on MS-COCO using vanilla recurrent
-networks.
+**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you donot include the dataset folder in the zip.
 
-### Q2: Image Captioning with LSTMs (35 points)
-The Jupyter notebook `LSTM_Captioning.ipynb` will walk you through the
-implementation of Long-Short Term Memory (LSTM) RNNs, and apply them to image
-captioning on MS-COCO.
+**2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
-### Q3: Image Gradients: Saliency maps and Fooling Images (10 points)
-The Jupyter notebook `ImageGradients.ipynb` will introduce the TinyImageNet
-dataset. You will use a pretrained model on this dataset to compute gradients
-with respect to the image, and use them to produce saliency maps and fooling
-images.
+**3.** Please submit <UmassID>.zip and the pdf to Gradescope.
 
-### Q4: Image Generation: Classes, Inversion, DeepDream (15 points)
-In the Jupyter notebook `ImageGeneration.ipynb` you will use the pretrained
-TinyImageNet model to generate images. In particular you will generate
-class visualizations and implement feature inversion and DeepDream.
-
-### Q5: Do something extra! (up to +10 points)
-Given the components of the assignment, try to do something cool. Maybe there is
-some way to generate images that we did not implement in the assignment?
-
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`.
