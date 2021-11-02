@@ -23,15 +23,12 @@ In order to do the assignment, you will need to install either TensorFlow 1.7 (i
 
 If you face difficulty re-using the python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch-cpu for the example):
 
-```conda remove --name cs682 --all # delete old environment if there is one
+```bash
+conda remove --name cs682 --all # delete old environment if there is one
 conda create --name cs682 python=3.6
 conda activate cs682
 pip install -r requirements.txt
 conda install pytorch torchvision cpuonly -c pytorch
-```
-
-```bash
-python setup.py build_ext --inplace
 ```
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
